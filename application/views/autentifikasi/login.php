@@ -13,7 +13,7 @@
                                 </div>
                                 <?= $this->session->flashdata('pesan') ?>
 
-                                <form class="user" method="POST" action="<?= base_url() ?>">
+                                <form class="user" method="POST" action="<?= base_url('autentifikasi') ?>">
                                     <div class="form-group">
                                         <input type="text" class="form-control form-control-user"
                                             value="<?= set_value('email') ?>" id="email"
@@ -33,7 +33,8 @@
                                     <a class="small" href="<?= base_url('/lupaPassword') ?>">Lupa Password?</a>
                                 </div>
                                 <div class="text-center">
-                                    <a class="small" href="<?= base_url('/registrasi') ?>">Daftar Member!</a>
+                                    <a class="small" href="<?= base_url('autentifikasi/registrasi') ?>">Daftar
+                                        Member!</a>
                                 </div>
                             </div>
                         </div>
